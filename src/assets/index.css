@@ -1,0 +1,29 @@
+@import "./classes.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+.full-screen {
+  width: 100%;
+  height: 100vh;
+}
+
+@layer base {
+  @font-face {
+    font-family: "Inter";
+    src: url(/fonts/Inter.ttf);
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat.ttf);
+  }
+}
