@@ -29,6 +29,7 @@ import Form20 from "/images/form20.png";
 import Form21 from "/images/form21.png";
 import Form22 from "/images/form22.png";
 
+import RotorVideo from "/videos/rotor.mp4";
 
 //
 
@@ -62,3 +63,5 @@ export const form19 = Form19
 export const form20 = Form20
 export const form21 = Form21
 export const form22 = Form22
+
+export const rotorVideo = RotorVideo

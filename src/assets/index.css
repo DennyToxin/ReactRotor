@@ -1,19 +1,16 @@
-@import "./classes.css";
+@import "./styles.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  
+  --charcoal: #1c1c1c;
+  --canvas: #ebe6e2;
+  --slater: #525367;
 }
 
 html {
   @apply scroll-smooth;
-}
-
-.full-screen {
-  width: 100%;
-  height: 100vh;
 }
 
 @layer base {
