@@ -6,12 +6,12 @@ import { Services } from "../components/Services";
 
 export const App = () => {
   return (
-    <div>
+    <>
       <Navibar />
       <Home />
       <Services />
       <Gallery />
       <Contacts />
-    </div>
+    </>
   );
 };

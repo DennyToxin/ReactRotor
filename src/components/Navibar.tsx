@@ -3,7 +3,7 @@ import { rotorLogo } from "../utils"
 
 export const Navibar = () => {
   return (
-    <header className="navibar">
+    <header className="absolute w-full">
         <nav className="w-full flex justify-between items-center">
           <div id="header" className="flex justify-center ml-10">
             <img src={rotorLogo} width={18} height={18} alt="logo" />
@@ -17,7 +17,7 @@ export const Navibar = () => {
             max-sm:hidden"
           >
             {linkList.map(({ id, text, link }) => (
-              <a href={link} className="text-default navs" key={id}>
+              <a href={link} className=" text-default navs" key={id}>
                 {text}
               </a>
             ))}

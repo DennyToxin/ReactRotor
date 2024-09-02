@@ -8,7 +8,7 @@ export const linkList = [
   },
   {
     id: 2,
-    text: "Галлерея",
+    text: "Галерея",
     link: "#gallery",
   },
   {
