@@ -1,5 +1,5 @@
 import { useGSAP } from "@gsap/react";
-import { corner, rotorImageVertical, rotorVideo } from "../utils";
+import { rotorVideo } from "../utils";
 import gsap from "gsap";
 
 export const Home = () => {
