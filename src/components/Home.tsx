@@ -1,5 +1,5 @@
 import { useGSAP } from "@gsap/react";
-import { corner, rotorImageVertical } from "../utils";
+import { corner, rotorImageVertical, rotorVideo } from "../utils";
 import gsap from "gsap";
 
 export const Home = () => {
@@ -45,20 +45,8 @@ export const Home = () => {
           className="w-2/3 flex justify-center
           max-md:w-full"
         >
-          <img
-            className="home-image"
-            src={rotorImageVertical}
-            alt="RotorImage"
-          />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-{
-  /* <video
-            className="pointer-events-none"
+          <video
+            className="pointer-events-none home-image"
             autoPlay
             muted
             loop
@@ -66,5 +54,9 @@ export const Home = () => {
             key={rotorVideo}
           >
             <source src={rotorVideo} type="video/mp4" />
-          </video> */
-}
+          </video>
+        </div>
+      </div>
+    </div>
+  );
+};

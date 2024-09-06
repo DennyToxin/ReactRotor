@@ -33,7 +33,7 @@ import Form22 from "/images/form22.png";
 
 import RotorImageHorizontal from "/images/rotorImageHorizontal.png";
 import RotorImageVertical from "/images/rotorImageVertical.png";
-import RotorVideo from "/videos/rotor.mp4";
+import RotorVideo from "/videos/rotor.webm";
 
 //
 
