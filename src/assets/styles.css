@@ -1,8 +1,116 @@
 @layer utilities {
+  /*--------------- COMMON ---------------*/
   .page-view {
     width: 100%;
     height: 100vh;
     overflow: hidden;
   }
-
+  /*--------------- TYPOGRAPHY ---------------*/
+  .font-sz-1 {
+    line-height: 1;
+    font-size: clamp(0.5rem, 1.5vw, 1.5rem);
+  }
+  .font-sz-2 {
+    line-height: 1;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+  }
+  .font-sz-3 {
+    line-height: 1;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+  }
+  .font-sz-4 {
+    line-height: 1;
+    font-size: clamp(2rem, 2vw, 4rem);
+  }
+  /*--------------- NAVIBAR ---------------*/
+  .navibar-item {
+    @apply flex w-fit h-fit;
+  }
+  .navibar-link {
+    transition: all ease-in-out 0.2s;
+    @apply text-fontPrimaryLt font-inter cursor-pointer py-1 px-2 rounded-xl;
+    &:hover {
+      box-shadow: 3px 3px 5px black, -2px -2px 5px white;
+    }
+    &:active {
+      transition: all linear 0s;
+      box-shadow: 1px 1px 4px black, -1px -1px 4px white;
+    }
+  }
+  /*--------------- HOME ---------------*/
+  .home-title {
+    font-weight: 600;
+    @apply font-montserrat;
+  }
+  .home-subtitle {
+    @apply font-inter;
+  }
+  .home-link {
+    user-select: none;
+    transition: all ease-in-out 0.2s;
+    @apply font-inter bg-buttonPrimary text-white w-fit p-2 rounded-xl
+    cursor-pointer;
+    &:hover {
+      @apply bg-buttonSecondary;
+    }
+    &:active {
+      @apply bg-buttonSecondary scale-90;
+    }
+  }
+  .home-image {
+    object-fit: cover;
+  }
+  /*--------------- SERVICES ---------------*/
+  .service-card {
+    @apply flex flex-col bg-bgSecondaryLt rounded-xl shadow-xl
+    shadow-bgShadow p-4;
+  }
+  .service-title {
+    @apply font-montserrat font-medium;
+  }
+  .service-text {
+    @apply font-inter text-justify;
+  }
+  /*--------------- GALLERY ---------------*/
+  .gallery-image {
+    user-select: none;
+    @apply w-full h-full object-scale-down pointer-events-none;
+  }
+  .gallery-placeholder {
+    @apply w-full h-full bg-bgSecondaryLt rounded-xl shadow-lg
+    shadow-bgShadow p-2;
+  }
+  /*--------------- CONTACTS ---------------*/
+  .contacts-view {
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+  }
+  /*--------------- MODALS ---------------*/
+  .modal-view {
+    width: 100%;
+    height: 100vh;
+    @apply fixed flex top-0 bottom-0 left-0 right-0 z-50
+    justify-center items-center bg-black bg-opacity-80;
+  }
+  .modal-photo {
+    width: 80%;
+    height: 80%;
+    object-fit: scale-down;
+  }
+  .modal-button {
+    @apply absolute;
+  }
+  .modal-button.prev {
+    bottom: 5%;
+    left: 5%;
+  }
+  .modal-button.next {
+    bottom: 5%;
+    right: 5%;
+  }
+  .modal-button.close {
+    top: 5%;
+    right: 5%;
+  }
 }

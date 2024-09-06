@@ -5,6 +5,9 @@ import { Navibar } from "../components/Navibar";
 import { Services } from "../components/Services";
 
 export const App = () => {
+  onhashchange = (e) => {
+    history.replaceState(null, "", e.oldURL);
+  };
   return (
     <>
       <Navibar />

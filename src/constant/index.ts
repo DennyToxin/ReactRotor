@@ -38,111 +38,111 @@ export const serviceCards = [
 
 export const galleryList = [
   {
-    id: 1,
+    id: 0,
     src: utils.photo1,
   },
   {
-    id: 2,
+    id: 1,
     src: utils.photo2,
   },
   {
-    id: 3,
+    id: 2,
     src: utils.photo3,
   },
   {
-    id: 4,
+    id: 3,
     src: utils.photo4,
   },
   {
-    id: 5,
+    id: 4,
     src: utils.photo5,
   },
   {
-    id: 6,
+    id: 5,
     src: utils.form1,
   },
   {
-    id: 7,
+    id: 6,
     src: utils.form2,
   },
   {
-    id: 8,
+    id: 7,
     src: utils.form3,
   },
   {
-    id: 9,
+    id: 8,
     src: utils.form4,
   },
   {
-    id: 10,
+    id: 9,
     src: utils.form5,
   },
   {
-    id: 11,
+    id: 10,
     src: utils.form6,
   },
   {
-    id: 12,
+    id: 11,
     src: utils.form7,
   },
   {
-    id: 13,
+    id: 12,
     src: utils.form8,
   },
   {
-    id: 14,
+    id: 13,
     src: utils.form9,
   },
   {
-    id: 15,
+    id: 14,
     src: utils.form10,
   },
   {
-    id: 16,
+    id: 15,
     src: utils.form11,
   },
   {
-    id: 17,
+    id: 16,
     src: utils.form12,
   },
   {
-    id: 18,
+    id: 17,
     src: utils.form13,
   },
   {
-    id: 19,
+    id: 18,
     src: utils.form14,
   },
   {
-    id: 20,
+    id: 19,
     src: utils.form15,
   },
   {
-    id: 21,
+    id: 20,
     src: utils.form16,
   },
   {
-    id: 22,
+    id: 21,
     src: utils.form17,
   },
   {
-    id: 23,
+    id: 22,
     src: utils.form18,
   },
   {
-    id: 24,
+    id: 23,
     src: utils.form19,
   },
   {
-    id: 25,
+    id: 24,
     src: utils.form20,
   },
   {
-    id: 26,
+    id: 25,
     src: utils.form21,
   },
   {
-    id: 27,
+    id: 26,
     src: utils.form22,
   },
 ];

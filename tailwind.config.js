@@ -4,19 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        charcoal: "var(--charcoal)",
-        canvas: {
-          default: "#ebe6e2",
-          100: "#fbfaf9",
-          200: "#f7f5f3",
-          300: "#f3f0ee",
-          400: "#efebe8",
-          500: "#ebe6e2",
-          600: "#bcb8b5",
-          700: "#8d8a88",
-          800: "#5e5c5a",
-          900: "#2f2e2d"
-},
+        fontPrimaryLt: "var(--charcoal)",
+        bgPrimaryLt: "var(--bg-primary-lt)",
+        bgSecondaryLt: "var(--bg-secondary-lt)",
+        bgShadow: "var(--bg-shadow)",
+        buttonPrimary: "var(--button-primary)",
+        buttonSecondary: "var(--button-secondary)",
       },
       fontFamily: {
         inter: ["Inter"],
