@@ -1,6 +1,4 @@
-import { useGSAP } from "@gsap/react";
 import { back, cancel, forward } from "../utils";
-import gsap from "gsap";
 
 type ModalPhotoProps = {
   isOpenPhoto: boolean;
