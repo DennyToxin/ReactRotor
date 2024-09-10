@@ -1,3 +1,7 @@
+import { useGSAP } from "@gsap/react";
+import { back, cancel, forward } from "../utils";
+import gsap from "gsap";
+
 type ModalPhotoProps = {
   isOpenPhoto: boolean;
   onClosePhoto: () => void;
@@ -15,24 +19,18 @@ export const ModalPhoto = ({
 }: ModalPhotoProps) => {
   if (!isOpenPhoto) return null;
   return (
-    <div className="modal-view">
+    <main className="modal__view">
       <div
         className="relative h-full w-full flex
         justify-center items-center"
       >
-        <div className="relative flex justify-center items-center bg-bgSecondaryLt rounded-xl w-5/6 h-5/6">
-          <button className="modal-button close" onClick={onClosePhoto}>
-            CLOSE
-          </button>
-          <button className="modal-button prev" onClick={prevPhoto}>
-            PREV
-          </button>
-          <button className="modal-button next" onClick={nextPhoto}>
-            NEXT
-          </button>
+        <div className="modal__tablet">
+          <img src={cancel} alt="Close" className="modal-button close" onClick={onClosePhoto} />
+          <img src={back} alt="Prev" className="modal-button prev" onClick={prevPhoto} />
+          <img src={forward} alt="Next" className="modal-button next" onClick={nextPhoto} />
           {children}
         </div>
       </div>
-    </div>
+    </main>
   );
 };

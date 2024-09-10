@@ -1,6 +1,7 @@
 import RotorLogo from "/icons/logo.svg";
-import Arrow from "/icons/arrow.svg";
-import Corner from "/icons/corner.svg";
+import Forward from "/icons/forward.svg";
+import Back from "/icons/back.svg";
+import Cancel from "/icons/cancel.svg";
 
 import Photo1 from "/images/photo1.png";
 import Photo2 from "/images/photo2.png";
@@ -38,8 +39,9 @@ import RotorVideo from "/videos/rotor.webm";
 //
 
 export const rotorLogo = RotorLogo
-export const arrow = Arrow
-export const corner = Corner
+export const forward = Forward
+export const back = Back
+export const cancel = Cancel
 
 export const photo1 = Photo1
 export const photo2 = Photo2

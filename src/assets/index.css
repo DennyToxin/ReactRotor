@@ -5,12 +5,18 @@
 @tailwind utilities;
 
 :root {
-  --charcoal: #1c1c1c;
-  --button-primary: #a4d4f4;
-  --button-secondary: #766e91;
-  --bg-primary-lt: white;
-  --bg-secondary-lt: #ececec;
-  --bg-shadow: #c9c5c2;
+  /*--- Light Theme ---*/
+  
+  --font-primary-lt: #494045;
+  --font-secondary-lt: #f5f5f5;
+  --bg-primary-lt: #f4ecea;
+  --bg-secondary-lt: #cfbcc7;
+  --bg-secondary-trans-lt: #cfbcc7c5;
+  --tablet-lt: #f5f5f5;
+  --focus-primary-lt: #7082ce;
+  --focus-secondary-lt: #4e5c9c;
+
+  /*--- Dark Theme ---*/
 }
 
 html {

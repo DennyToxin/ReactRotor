@@ -30,7 +30,7 @@ export const Navibar = () => {
             />
           </div>
           <div className="navibar-item">
-            <a href="#home" className="navibar-link">
+            <a href="#home" className="navibar-link text-fontPrimaryLt">
               RotorPenza
             </a>
           </div>
@@ -38,7 +38,7 @@ export const Navibar = () => {
         <div className="flex gap-6 mr-16 max-sm:hidden">
           {linkList.map(({ id, text, link }) => (
             <div className="navibar-item" key={id}>
-              <a href={link} className="navibar-link">
+              <a href={link} className="navibar-link text-fontPrimaryLt">
                 {text}
               </a>
             </div>

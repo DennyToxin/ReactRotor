@@ -51,7 +51,11 @@ export const Gallery = () => {
   };
 
   return (
-    <div id="gallery" className="page-view flex flex-col items-center justify-center">
+    <main
+      id="gallery"
+      className="bg-bgPrimaryLt page-view flex flex-col
+      items-center justify-center"
+    >
       <ModalGallery isOpen={open} onClose={handleClose} />
       <ModalPhoto
         isOpenPhoto={openPhoto}
@@ -59,13 +63,15 @@ export const Gallery = () => {
         nextPhoto={handleNextPhoto}
         prevPhoto={handlePrevPhoto}
       >
-        <img src={galleryList[currentPhoto].src} className="modal-photo" />
+        <img src={galleryList[currentPhoto].src} className="modal__photo" />
       </ModalPhoto>
       <div
         className="flex relative justify-center
         items-center h-4/5 w-5/6"
       >
-        <button className="absolute top-0 left-0" onClick={handleOpen}>Все фото</button>
+        <button className="gallery__button button" onClick={handleOpen}>
+          Все фото
+        </button>
         <Swiper
           className="h-2/3"
           loop={true}
@@ -96,18 +102,18 @@ export const Gallery = () => {
           {galleryList.map(({ id, src }) => (
             <SwiperSlide key={id}>
               <div
-                className="gallery-placeholder"
+                className="gallery__placeholder"
                 onClick={() => {
                   setCurrentPhoto(id);
                   handleOpenPhoto();
                 }}
               >
-                <img className="gallery-image" src={src} alt="gallery" />
+                <img className="gallery__image" src={src} alt="gallery" />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-    </div>
+    </main>
   );
 };

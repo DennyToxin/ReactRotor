@@ -1,3 +1,6 @@
+import { galleryList } from "../constant";
+import { cancel } from "../utils";
+
 type ModalGalleryProps = {
   isOpen: boolean;
   onClose: () => void;
@@ -6,17 +9,25 @@ type ModalGalleryProps = {
 export const ModalGallery = ({ isOpen, onClose }: ModalGalleryProps) => {
   if (!isOpen) return null;
   return (
-    <div className="modal-view">
+    <main className="modal__view">
       <div
         className="relative h-full w-full flex
         justify-center items-center"
       >
-        <div className="relative flex justify-center items-center bg-bgSecondaryLt rounded-xl w-5/6 h-5/6">
-          <button className="modal-button close" onClick={onClose}>
-            CLOSE
-          </button>
+        <div className="modal__tablet">
+          <img
+            src={cancel}
+            alt="Close"
+            className="modal-button close z-20"
+            onClick={onClose}
+          />
+          <div className="modal__grid">
+            {galleryList.map(({ id, src }) => (
+              <img src={src} key={id} className="modal__image" />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
