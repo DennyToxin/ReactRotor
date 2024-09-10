@@ -1,75 +1,62 @@
 import { useGSAP } from "@gsap/react";
-import { linkList } from "../constant";
 import gsap from "gsap";
-import { photo2, rotorLogo } from "../utils";
+import { galleryList } from "../constant";
 
 export const Home = () => {
   useGSAP(() => {
-    gsap.from("#header", {
-      y: -50,
-      opacity: 0,
-      duration: 1,
-      ease: "power1.inOut",
-      stagger: 0.1,
-    });
-
-    gsap.from(".home-text", {
-      delay: 0.5,
+    gsap.from(".home__text", {
       y: 20,
+      delay: 1.5,
       opacity: 0,
       duration: 0.5,
-      ease: "power1.inOut",
+      stagger: 0.25,
+      ease: "power2.out",
     });
 
-    gsap.from(".image", {
-      delay: 0.5,
-      y: "100%",
+    gsap.from(".home__header", {
       opacity: 0,
+      delay: 1,
       duration: 1,
-      ease: "power1.inOut",
+      ease: "power2.out",
+    });
+
+    gsap.from(".home__image", {
+      y: "100%",
+      delay: 1.5,
+      duration: 1.5,
+      ease: "power2.out",
     });
   });
 
   return (
-    <div
-      className="full-screen overflow-hidden bg-canvas
-      flex flex-col items-center"
+    <main
+      id="home"
+      className="page-view bg-bgPrimaryLt justify-center items-end"
     >
-      <header className="absolute w-full flex items-center px-5 sm:px-10 py-5">
-        <nav className="w-full flex justify-between items-center">
-          <div id="header" className="flex justify-center ml-10">
-            <img src={rotorLogo} width={18} height={18} alt="logo" />
-            <a href="/" className="logo link ml-2">
-              RotorPenza
+      <section
+        className="relative w-5/6 h-5/6 max-sm:w-full flex
+        max-md:justify-center"
+      >
+        <header className="home__header">
+          <h2 className="home__title home__text text-fontPrimaryLt">
+            RotorPenza
+          </h2>
+          <h3 className="home__subtitle home__text text-fontPrimaryLt">
+            Производство и ремонт формующих роторов
+          </h3>
+          <div className="home__text mt-2">
+            <a className="button" href="#services">
+              Подробнее
             </a>
           </div>
-          <div
-            id="header"
-            className="flex justify-center gap-10 mr-10
-            max-sm:hidden"
-          >
-            {linkList.map(({ id, text, link }) => (
-              <a href={link} className="link cursor-pointer" key={id}>
-                {text}
-              </a>
-            ))}
-          </div>
-        </nav>
-      </header>
-      <div className="flex justify-center items-center w-full h-full">
+        </header>
         <div
-          className="relative w-4/5 h-4/5 flex items-center
-          max-lg:justify-center justify-evenly"
+          className="w-2/3 flex justify-center
+          max-md:w-full"
         >
-          <div className="home-text z-10 rounded-b-md">
-            RotorPenza - это производство, ремонт, и реставрация формующих
-            роторов и изготовление комплектующих к ним. Разработка и
-            изготовление матриц для сахарного печенья и заливки мармелада.
-            Создание струнных резок и фильер для пряничного производства.
-          </div>
-          <img src={photo2} className="image" alt="photo" />
+          <img src={galleryList[1].src} className="home__image" />
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };

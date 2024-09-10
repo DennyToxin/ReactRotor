@@ -1,16 +1,16 @@
-import React from "react";
+import { useRef } from "react";
 import { serviceCards } from "../constant";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export const Services = () => {
-  const scrollRef = React.useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
     const cards = Array.from(scrollRef.current?.children || []);
-
     cards.forEach((card) => {
       gsap.from(card, {
         x: "-100%",
@@ -18,7 +18,7 @@ export const Services = () => {
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: card,
-          start: "bottom bottom",
+          start: "top 90%",
           end: "top 65%",
           scrub: true,
           toggleActions: "play none none reverse",
@@ -28,18 +28,21 @@ export const Services = () => {
   }, {scope: scrollRef});
 
   return (
-    <div
+    <main
       id="services"
-      className="full-screen overflow-hidden bg-canvas flex flex-col
-      justify-center items-center gap-10 max-sm:gap-4"
-      ref={scrollRef}
+      className="page-view bg-bgPrimaryLt justify-center items-center"
     >
-      {serviceCards.map(({ id, title, text }) => (
-        <div key={id} className="wrapper">
-          <div className="services-title">{title}</div>
-          <div className="services-text">{text}</div>
-        </div>
-      ))}
-    </div>
+      <div
+        ref={scrollRef}
+        className="services__wrapper"
+      >
+        {serviceCards.map(({ id, title, text }) => (
+          <article key={id} className="service__card">
+            <h4 className="service__card-title">{title}</h4>
+            <p className="service__card-text">{text}</p>
+          </article>
+        ))}
+      </div>
+    </main>
   );
 };

@@ -1,4 +1,7 @@
 import RotorLogo from "/icons/logo.svg";
+import Forward from "/icons/forward.svg";
+import Back from "/icons/back.svg";
+import Cancel from "/icons/cancel.svg";
 
 import Photo1 from "/images/photo1.png";
 import Photo2 from "/images/photo2.png";
@@ -29,10 +32,16 @@ import Form20 from "/images/form20.png";
 import Form21 from "/images/form21.png";
 import Form22 from "/images/form22.png";
 
+import RotorImageHorizontal from "/images/rotorImageHorizontal.png";
+import RotorImageVertical from "/images/rotorImageVertical.png";
+import RotorVideo from "/videos/rotor.webm";
 
 //
 
 export const rotorLogo = RotorLogo
+export const forward = Forward
+export const back = Back
+export const cancel = Cancel
 
 export const photo1 = Photo1
 export const photo2 = Photo2
@@ -62,3 +71,7 @@ export const form19 = Form19
 export const form20 = Form20
 export const form21 = Form21
 export const form22 = Form22
+
+export const rotorImageHorizontal = RotorImageHorizontal
+export const rotorImageVertical = RotorImageVertical
+export const rotorVideo = RotorVideo
