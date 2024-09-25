@@ -1,6 +1,5 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { galleryList } from "../constant";
 import { home, mail, phone } from "../utils";
 
 export const Home = () => {
