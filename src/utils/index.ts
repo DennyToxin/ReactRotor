@@ -2,7 +2,13 @@ import RotorLogo from "/icons/logo.svg";
 import Forward from "/icons/forward.svg";
 import Back from "/icons/back.svg";
 import Cancel from "/icons/cancel.svg";
+import Phone from "/icons/phone.svg";
+import Mail from "/icons/mail.svg";
 
+import Home from "/images/home.png";
+import Serv2 from "/images/serv2.png";
+import Serv3 from "/images/serv3.png";
+import Serv4 from "/images/serv4.png";
 import Photo1 from "/images/photo1.png";
 import Photo2 from "/images/photo2.png";
 import Photo3 from "/images/photo3.png";
@@ -42,7 +48,13 @@ export const rotorLogo = RotorLogo
 export const forward = Forward
 export const back = Back
 export const cancel = Cancel
+export const phone = Phone
+export const mail = Mail
 
+export const home = Home
+export const serv2 = Serv2
+export const serv3 = Serv3
+export const serv4 = Serv4
 export const photo1 = Photo1
 export const photo2 = Photo2
 export const photo3 = Photo3

@@ -75,24 +75,45 @@
   .home__link {
     @apply w-fit p-2;
   }
+  .home__contacts {
+    line-height: 1;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    @apply text-fontPrimaryLt font-inter flex gap-2 items-center;
+    &:hover {
+      @apply text-focusPrimeryLt;
+    }
+  }
+  .home__contacts:hover > img {
+    filter: invert(50%) sepia(75%) saturate(318%) hue-rotate(191deg)
+      brightness(90%) contrast(89%);
+  }
   .home__image {
     object-fit: cover;
     @apply pointer-events-none;
   }
   /*--------------- SERVICES ---------------*/
-  .services__wrapper {
-    @apply w-5/6 grid gap-8 grid-cols-2 max-md:grid-cols-1
-    max-sm:w-full max-sm:gap-4
+  .service__wrapper {
+    @apply w-5/6 h-full flex flex-wrap max-md:w-full;
   }
   .service__card {
-    @apply flex flex-col bg-bgSecondaryLt rounded-xl shadow-xl
-    p-4 gap-1;
+    width: 47%;
+    @apply relative flex bg-bgSecondaryLt rounded-xl p-4 m-4 overflow-hidden
+    max-xl:w-full;
+  }
+  .service__text {
+    @apply flex flex-col h-fit gap-3 z-10 w-4/5 max-xl:w-full;
   }
   .service__card-title {
-    @apply font-montserrat font-medium;
+    @apply text-fontPrimaryLt font-montserrat font-semibold;
   }
   .service__card-text {
-    @apply font-inter text-justify;
+    @apply text-fontPrimaryLt font-inter;
+  }
+  .service__image-wrapper {
+    @apply w-1/3 h-full pointer-events-none flex items-center max-xl:hidden;
+  }
+  .service__image {
+    @apply w-full object-scale-down pointer-events-none;
   }
   /*--------------- GALLERY ---------------*/
   .gallery__image {
@@ -110,10 +131,26 @@
     bottom: 12%;
   }
   /*--------------- CONTACTS ---------------*/
-  .contacts-view {
+  .contacts__view {
     width: 100%;
     height: 10vh;
     overflow: hidden;
+  }
+  .contacts__link {
+    line-height: 1;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    @apply text-fontSecondaryLt font-inter flex gap-2 items-center;
+    &:hover {
+      @apply text-focusPrimeryLt;
+    }
+  }
+  .contacts__icon {
+    filter: invert(100%) sepia(49%) saturate(24%) hue-rotate(160deg)
+      brightness(113%) contrast(92%);
+  }
+  .contacts__link:hover > img {
+    filter: invert(50%) sepia(75%) saturate(318%) hue-rotate(191deg)
+      brightness(90%) contrast(89%);
   }
   /*--------------- MODALS ---------------*/
   .modal__view {

@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { galleryList } from "../constant";
+import { home, mail, phone } from "../utils";
 
 export const Home = () => {
   useGSAP(() => {
@@ -42,8 +43,18 @@ export const Home = () => {
             RotorPenza
           </h2>
           <h3 className="home__subtitle home__text text-fontPrimaryLt">
-            Производство и ремонт формующих роторов
+            Производство и ремонт формующих роторов по России и СНГ
           </h3>
+          <div className="flex flex-col home__text my-3 gap-2">
+            <a href="tel:+79273718606" className="home__contacts">
+              <img src={phone} alt="phone" />
+              +7 (927) 371 86 06
+            </a>
+            <a href="mailto:rotorpenza@yandex.ru" className="home__contacts">
+              <img src={mail} alt="mail" />
+              rotorpenza@ya.ru
+            </a>
+          </div>
           <div className="home__text mt-2">
             <a className="button" href="#services">
               Подробнее
@@ -54,7 +65,7 @@ export const Home = () => {
           className="w-2/3 flex justify-center
           max-md:w-full"
         >
-          <img src={galleryList[1].src} className="home__image" />
+          <img src={home} className="home__image" />
         </div>
       </section>
     </main>
