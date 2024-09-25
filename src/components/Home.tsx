@@ -42,7 +42,7 @@ export const Home = () => {
             RotorPenza
           </h2>
           <h3 className="home__subtitle home__text text-fontPrimaryLt">
-            Производство и ремонт формующих роторов по России и СНГ
+            Производство и ремонт формующих роторов <span className=" whitespace-nowrap">по России и СНГ</span>
           </h3>
           <div className="flex flex-col home__text my-3 gap-2">
             <a href="tel:+79273718606" className="home__contacts">
