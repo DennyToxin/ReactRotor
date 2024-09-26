@@ -16,13 +16,11 @@ export const ModalGallery = ({ isOpen, onClose }: ModalGalleryProps) => {
 
   const handleClosePhoto = () => {
     setOpenPhoto(false);
-    document.body.style.overflow = "";
   };
 
   const handleOpenPhoto = () => {
     console.log("handleOpenPhoto");
     setOpenPhoto(true);
-    document.body.style.overflow = "hidden";
   };
 
   const handleNextPhoto = () => {
