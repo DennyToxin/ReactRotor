@@ -6,6 +6,7 @@ import Phone from "/icons/phone.svg";
 import Mail from "/icons/mail.svg";
 
 import Home from "/images/home.png";
+import Serv1 from "/images/serv1.png";
 import Serv2 from "/images/serv2.png";
 import Serv3 from "/images/serv3.png";
 import Serv4 from "/images/serv4.png";
@@ -52,6 +53,7 @@ export const phone = Phone
 export const mail = Mail
 
 export const home = Home
+export const serv1 = Serv1
 export const serv2 = Serv2
 export const serv3 = Serv3
 export const serv4 = Serv4

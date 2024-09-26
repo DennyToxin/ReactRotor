@@ -97,14 +97,17 @@
     max-2xl:w-full max-2xl:mx-8 max-md:gap-4 max-md:mx-4;
   }
   .services__tablet {
-    @apply w-full h-full flex items-center justify-center gap-8 max-lg:flex-col max-md:gap-4;
+    @apply w-full h-full flex items-center justify-center gap-8
+    max-lg:flex-col max-md:gap-4;
   }
   .services__card {
     max-height: 378px;
-    @apply relative w-full h-full flex items-center justify-center rounded-xl bg-bgSecondaryLt;
+    @apply relative w-full h-full flex items-center justify-center
+    rounded-xl bg-bgSecondaryLt shadow-xl;
   }
   .services__text {
-    @apply w-2/3 h-full flex flex-col gap-4 p-4 max-xl:w-full max-md:gap-2;
+    @apply w-2/3 h-full flex flex-col gap-4 p-4 max-xl:w-full
+    max-md:gap-2;
   }
   .services__title {
     @apply font-montserrat font-semibold text-fontPrimaryLt;
