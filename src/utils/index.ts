@@ -5,16 +5,12 @@ import Cancel from "/icons/cancel.svg";
 import Phone from "/icons/phone.svg";
 import Mail from "/icons/mail.svg";
 
-import Home from "/images/home.png";
-import Serv1 from "/images/serv1.png";
-import Serv2 from "/images/serv2.png";
-import Serv3 from "/images/serv3.png";
-import Serv4 from "/images/serv4.png";
 import Photo1 from "/images/photo1.png";
 import Photo2 from "/images/photo2.png";
 import Photo3 from "/images/photo3.png";
 import Photo4 from "/images/photo4.png";
 import Photo5 from "/images/photo5.png";
+import Photo6 from "/images/photo6.png";
 
 import Form1 from "/images/form1.png";
 import Form2 from "/images/form2.png";
@@ -39,10 +35,6 @@ import Form20 from "/images/form20.png";
 import Form21 from "/images/form21.png";
 import Form22 from "/images/form22.png";
 
-import RotorImageHorizontal from "/images/rotorImageHorizontal.png";
-import RotorImageVertical from "/images/rotorImageVertical.png";
-import RotorVideo from "/videos/rotor.webm";
-
 //
 
 export const rotorLogo = RotorLogo
@@ -52,16 +44,12 @@ export const cancel = Cancel
 export const phone = Phone
 export const mail = Mail
 
-export const home = Home
-export const serv1 = Serv1
-export const serv2 = Serv2
-export const serv3 = Serv3
-export const serv4 = Serv4
 export const photo1 = Photo1
 export const photo2 = Photo2
 export const photo3 = Photo3
 export const photo4 = Photo4
 export const photo5 = Photo5
+export const photo6 = Photo6
 
 export const form1 = Form1
 export const form2 = Form2
@@ -85,7 +73,3 @@ export const form19 = Form19
 export const form20 = Form20
 export const form21 = Form21
 export const form22 = Form22
-
-export const rotorImageHorizontal = RotorImageHorizontal
-export const rotorImageVertical = RotorImageVertical
-export const rotorVideo = RotorVideo

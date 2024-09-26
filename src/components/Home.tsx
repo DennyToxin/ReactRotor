@@ -1,6 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { home, mail, phone } from "../utils";
+import { mail, phone, photo2 } from "../utils";
 
 export const Home = () => {
   useGSAP(() => {
@@ -64,7 +64,7 @@ export const Home = () => {
           className="w-2/3 flex justify-center
           max-md:w-full"
         >
-          <img src={home} className="home__image" />
+          <img src={photo2} className="home__image" />
         </div>
       </section>
     </main>
